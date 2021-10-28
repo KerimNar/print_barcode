@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LOGODBDataSet1" targetNamespace="http://tempuri.org/LOGODBDataSet1.xsd" xmlns:mstns="http://tempuri.org/LOGODBDataSet1.xsd" xmlns="http://tempuri.org/LOGODBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LOGODBSEREConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LOGODBSEREConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.barkod2.Properties.Settings.GlobalReference.Default.LOGODBSEREConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MK_001_VW_GnlListTableAdapter" GeneratorDataComponentClassName="MK_001_VW_GnlListTableAdapter" Name="MK_001_VW_GnlList" UserDataComponentName="MK_001_VW_GnlListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LOGODBSEREConnectionString (Settings)" DbObjectName="LOGODB.dbo.MK_001_VW_GnlList" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DEPARTMENT, KATALOG_ID, KATIGOR_ID, SUBKATIGOR_ID, ITMREF, ITMCODE, ITM_ID, ITMNAME, AMOUNT, CURRENCY, PRICE, MINPRICE, AKSIYA, BARCODE FROM dbo.MK_001_VW_GnlList</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DEPARTMENT" DataSetColumn="DEPARTMENT" />
+              <Mapping SourceColumn="KATALOG_ID" DataSetColumn="KATALOG_ID" />
+              <Mapping SourceColumn="KATIGOR_ID" DataSetColumn="KATIGOR_ID" />
+              <Mapping SourceColumn="SUBKATIGOR_ID" DataSetColumn="SUBKATIGOR_ID" />
+              <Mapping SourceColumn="ITMREF" DataSetColumn="ITMREF" />
+              <Mapping SourceColumn="ITMCODE" DataSetColumn="ITMCODE" />
+              <Mapping SourceColumn="ITM_ID" DataSetColumn="ITM_ID" />
+              <Mapping SourceColumn="ITMNAME" DataSetColumn="ITMNAME" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="CURRENCY" DataSetColumn="CURRENCY" />
+              <Mapping SourceColumn="PRICE" DataSetColumn="PRICE" />
+              <Mapping SourceColumn="MINPRICE" DataSetColumn="MINPRICE" />
+              <Mapping SourceColumn="AKSIYA" DataSetColumn="AKSIYA" />
+              <Mapping SourceColumn="BARCODE" DataSetColumn="BARCODE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LOGODBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LOGODBDataSet1" msprop:Generator_UserDSName="LOGODBDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MK_001_VW_GnlList" msprop:Generator_TableClassName="MK_001_VW_GnlListDataTable" msprop:Generator_TableVarName="tableMK_001_VW_GnlList" msprop:Generator_TablePropName="MK_001_VW_GnlList" msprop:Generator_RowDeletingName="MK_001_VW_GnlListRowDeleting" msprop:Generator_RowChangingName="MK_001_VW_GnlListRowChanging" msprop:Generator_RowEvHandlerName="MK_001_VW_GnlListRowChangeEventHandler" msprop:Generator_RowDeletedName="MK_001_VW_GnlListRowDeleted" msprop:Generator_UserTableName="MK_001_VW_GnlList" msprop:Generator_RowChangedName="MK_001_VW_GnlListRowChanged" msprop:Generator_RowEvArgName="MK_001_VW_GnlListRowChangeEvent" msprop:Generator_RowClassName="MK_001_VW_GnlListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPARTMENT" msprop:Generator_ColumnVarNameInTable="columnDEPARTMENT" msprop:Generator_ColumnPropNameInRow="DEPARTMENT" msprop:Generator_ColumnPropNameInTable="DEPARTMENTColumn" msprop:Generator_UserColumnName="DEPARTMENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATALOG_ID" msprop:Generator_ColumnVarNameInTable="columnKATALOG_ID" msprop:Generator_ColumnPropNameInRow="KATALOG_ID" msprop:Generator_ColumnPropNameInTable="KATALOG_IDColumn" msprop:Generator_UserColumnName="KATALOG_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KATIGOR_ID" msprop:Generator_ColumnVarNameInTable="columnKATIGOR_ID" msprop:Generator_ColumnPropNameInRow="KATIGOR_ID" msprop:Generator_ColumnPropNameInTable="KATIGOR_IDColumn" msprop:Generator_UserColumnName="KATIGOR_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBKATIGOR_ID" msprop:Generator_ColumnVarNameInTable="columnSUBKATIGOR_ID" msprop:Generator_ColumnPropNameInRow="SUBKATIGOR_ID" msprop:Generator_ColumnPropNameInTable="SUBKATIGOR_IDColumn" msprop:Generator_UserColumnName="SUBKATIGOR_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITMREF" msprop:Generator_ColumnVarNameInTable="columnITMREF" msprop:Generator_ColumnPropNameInRow="ITMREF" msprop:Generator_ColumnPropNameInTable="ITMREFColumn" msprop:Generator_UserColumnName="ITMREF" type="xs:int" />
+              <xs:element name="ITMCODE" msprop:Generator_ColumnVarNameInTable="columnITMCODE" msprop:Generator_ColumnPropNameInRow="ITMCODE" msprop:Generator_ColumnPropNameInTable="ITMCODEColumn" msprop:Generator_UserColumnName="ITMCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITM_ID" msprop:Generator_ColumnVarNameInTable="columnITM_ID" msprop:Generator_ColumnPropNameInRow="ITM_ID" msprop:Generator_ColumnPropNameInTable="ITM_IDColumn" msprop:Generator_UserColumnName="ITM_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITMNAME" msprop:Generator_ColumnVarNameInTable="columnITMNAME" msprop:Generator_ColumnPropNameInRow="ITMNAME" msprop:Generator_ColumnPropNameInTable="ITMNAMEColumn" msprop:Generator_UserColumnName="ITMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:double" minOccurs="0" />
+              <xs:element name="CURRENCY" msprop:Generator_ColumnVarNameInTable="columnCURRENCY" msprop:Generator_ColumnPropNameInRow="CURRENCY" msprop:Generator_ColumnPropNameInTable="CURRENCYColumn" msprop:Generator_UserColumnName="CURRENCY" type="xs:int" minOccurs="0" />
+              <xs:element name="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" msprop:Generator_UserColumnName="PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="MINPRICE" msprop:Generator_ColumnVarNameInTable="columnMINPRICE" msprop:Generator_ColumnPropNameInRow="MINPRICE" msprop:Generator_ColumnPropNameInTable="MINPRICEColumn" msprop:Generator_UserColumnName="MINPRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="AKSIYA" msprop:Generator_ColumnVarNameInTable="columnAKSIYA" msprop:Generator_ColumnPropNameInRow="AKSIYA" msprop:Generator_ColumnPropNameInTable="AKSIYAColumn" msprop:Generator_UserColumnName="AKSIYA" type="xs:double" minOccurs="0" />
+              <xs:element name="BARCODE" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" msprop:Generator_UserColumnName="BARCODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
